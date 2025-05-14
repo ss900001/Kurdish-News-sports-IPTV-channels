@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurdish IPTV Channels</title>
+</head>
+<body>
+    <h1>Kurdish IPTV Channels</h1>
+    <p>Click on any channel to watch live:</p>
+
+    <!-- Video player -->
+    <video id="video-player" width="600" controls>
+        <source id="video-source" src="" type="application/x-mpegURL">
+        Your browser does not support the video tag.
+    </video>
+
+    <ul id="channels-list">
+        <!-- Channels will be added here -->
+    </ul>
+
+    <script>
+        const base64Urls = [
+            "aHR0cHM6Ly9zdnMuaXR3b3Jrc2Nkbi5uZXQvcnVkYXdsaXZlL3J1ZGF3bGl2ZS5zbWlsL3J1ZGF3cHVibGlzaC9ydWRhd3R2X3NvdXJjZS9jaHVua3MubTN1OA==",
+            "aHR0cHM6Ly9kMXg4Mm55ZGN4bmR6ZS5jbG91ZGZyb250Lm5ldC9saXZlL2luZGV4XzI0MHAyNS5tM3U4",
+            "aHR0cHM6Ly9hdmExLnNpdGUvdXBsb2FkLy9pbWFnZXMvYXZhZnVsbC5tM3U4",
+            "aHR0cHM6Ly9tZWRpYS5zdHJlYW1icm90aGVycy5jb206MTkzNi84MjI2LzgyMjYvY2h1bmtsaXN0X3c2MjMyMDgzMi5tM3U4",
+            "aHR0cHM6Ly9rdXJkc2F0LnR2L2xpdmUva3VyZHNhdC5tM3U4",
+            "aHR0cDovL3NobmF0di5kZG5zLm5ldDoxOTM1L2xpdmUvc2huYXR2L3BsYXlsaXN0Lm0zdTg=",
+            "aHR0cDovL3Jhd3NoYW4uZGRucy5uZXQ6MTkzNS9saXZlL3Jhd3NoYW50di9wbGF5bGlzdC5tM3U4",
+            "aHR0cDovL3dhYXIudHYvbGl2ZS93YWFyLm0zdTg=",
+            "aHR0cDovL2NkbnZpbmUuY29tOjgwODAvYm4xaGQvdHJhY2tzLXYxYTEvbW9uby5tM3U4",
+            "aHR0cHM6Ly81YTNlZDdhNzJlZDRiLnN0cmVhbWxvY2submV0L2xpdmUvU01JTDpteXN0cmVhbS5zbWlsL3BsYXlsaXN0Lm0zdTg=",
+            "aHR0cHM6Ly92by1saXZlLW1lZGlhLmNkYi5jZG4ub3JhbmdlLmNvbS9Db250ZW50L0NoYW5uZWwvQWJ1RGhhYmlTcG9ydHNDaGFubmVsMS9ITFMvaW5kZXgubTN1OA==",
+            "aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczVubmhhL21hc3Rlci5tM3U4",
+            "aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczFtaHUvbWFzdGVyLm0zdTg=",
+            "aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczZTaG9vZjEvbWFzdGVyLm0zdTg=",
+            "aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczN2YWsvbWFzdGVyLm0zdTg=",
+            "aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczJoZWYvbWFzdGVyLm0zdTg=",
+            "aHR0cHM6Ly9zdHJlYW0xLmFudGVuYXBsYXkucm8vYXMvYXNyb2xpdmUxL3BsYXlsaXN0Lm0zdTg=",
+            "aHR0cHM6Ly9jZG4ubGl2ZS5lYXN5YnJvYWRjYXN0LmlvL2Ficl9jb3JwLzczX2FycnlhZGlhX2sydGdjajAvcGxheWxpc3RfZHZyLm0zdTg="
+        ];
+
+        function base64Decode(base64Str) {
+            const decodedStr = atob(base64Str);
+            return decodedStr;
+        }
+
+        const channelsList = document.getElementById("channels-list");
+        const videoPlayer = document.getElementById("video-player");
+        const videoSource = document.getElementById("video-source");
+
+        base64Urls.forEach((encodedUrl, index) => {
+            const url = base64Decode(encodedUrl);
+            const listItem = document.createElement("li");
+
+            listItem.innerHTML = `<button onclick="playChannel('${url}')">Channel ${index + 1} - Watch</button>`;
+            channelsList.appendChild(listItem);
+        });
+
+        function playChannel(url) {
+            videoSource.src = url;
+            videoPlayer.load();  // reload the video with the new source
+            videoPlayer.play();  // play the video
+        }
+    </script>
+</body>
+</html>
