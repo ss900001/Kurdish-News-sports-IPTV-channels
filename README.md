@@ -28,8 +28,21 @@ Example images VLC Media Player
 ![Step 3 - VLC](https://github.com/ss900001/Kurdish-News-sports-IPTV-channels/blob/main/3.jpg?raw=true)
 
 ---
+We recommend using PotPlayer for the best IPTV experience:
 
-## 🎞️ Open with PotPlayer
+⚡ Faster loading of .m3u/.m3u8 playlists
+
+📺 Smooth streaming with high-quality video playback
+
+🧠 Better performance and lower CPU usage than VLC
+
+🎚️ Advanced controls for video, audio, and subtitle settings
+
+📥 Download PotPlayer: https://potplayer.daum.net/
+
+✅ Works perfectly with the playlist link below:
+
+🎞️ Open with PotPlayer
 
 If you're using **PotPlayer**, follow these steps:
 
