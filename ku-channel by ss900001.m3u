@@ -32,8 +32,8 @@ http://shnatv.ddns.net:1935/live/shnatv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="shna1" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",SHNA Quran
 http://rawshan.ddns.net:1935/live/rawshantv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="waar" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",Waar TV
-http://waar.tv/live/waar.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="mbc" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports", mbc3
+https://mbcbollywood-prod-dub-enc.edgenextcdn.net/out/v1/d5bbe570e1514d3d9a142657d33d85e6/index_1.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="channel" tvg-language="Arabic" tvg-country="unknown" group-title="Sports",BeanSport 1 
 http://cdnvine.com:8080/bn1hd/tracks-v1a1/mono.m3u8
