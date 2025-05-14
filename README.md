@@ -40,7 +40,7 @@ If you're using **PotPlayer**, follow these steps:
 4. ## 🌐 Watch in Browser
 
 You can also watch in a simple browser player:  
-🔗 [Click here to play in browser](https://ss900001.github.io/Kurdish-sports-IPTV-channels/)
+🔗 [Click here to play in browser](https://ss900001.github.io/Kurdish-sports-IPTV-channels/playtv)
 
 ---
 
