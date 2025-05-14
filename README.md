@@ -30,19 +30,19 @@ Example images VLC Media Player
 ---
 We recommend using PotPlayer for the best IPTV experience:
 
-⚡ Faster loading of .m3u/.m3u8 playlists
+ Faster loading of .m3u/.m3u8 playlists
 
-📺 Smooth streaming with high-quality video playback
+ Smooth streaming with high-quality video playback
 
-🧠 Better performance and lower CPU usage than VLC
+ Better performance and lower CPU usage than VLC
 
-🎚️ Advanced controls for video, audio, and subtitle settings
+🎚 Advanced controls for video, audio, and subtitle settings
 
-📥 Download PotPlayer: https://potplayer.daum.net/
+ Download PotPlayer: https://potplayer.daum.net/
 
-✅ Works perfectly with the playlist link below:
+Works perfectly with the playlist link below:
 
-🎞️ Open with PotPlayer
+🎞Open with PotPlayer
 
 If you're using **PotPlayer**, follow these steps:
 
