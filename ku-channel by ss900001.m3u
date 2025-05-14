@@ -1,0 +1,61 @@
+# This is my personal IPTV list for sport news channels  
+# Updated: 2025-05-14
+# Maintained by: ss900001
+# For updates, always check my GitHub: # Maintained by: Your Name or Username
+# For updates, always check my GitHub: https://github.com/ss900001
+#----------------------------------------------------------------------------
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="Rudaw TV" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="News",Rudaw TV
+base64:aHR0cHM6Ly9zdnMuaXR3b3Jrc2Nkbi5uZXQvcnVkYXdsaXZlL3J1ZGF3bGl2ZS5zbWlsL3J1ZGF3cHVibGlzaC9ydWRhd3R2X3NvdXJjZS9jaHVua3MubTN1OA==
+
+#EXTINF:-1 tvg-id="" tvg-name="K24" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="News",Kurdistan24 TV
+base64:aHR0cHM6Ly9kMXg4Mm55ZGN4bmR6ZS5jbG91ZGZyb250Lm5ldC9saXZlL2luZGV4XzI0MHAyNS5tM3U4
+
+#EXTINF:-1 tvg-id="" tvg-name="AVA TV" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",AVA TV
+base64:aHR0cHM6Ly9hdmExLnNpdGUvdXBsb2FkLy9pbWFnZXMvYXZhZnVsbC5tM3U4
+
+#EXTINF:-1 tvg-id="" tvg-name="NRT" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",NRT TV
+base64:aHR0cHM6Ly9tZWRpYS5zdHJlYW1icm90aGVycy5jb206MTkzNi84MjI2LzgyMjYvY2h1bmtsaXN0X3c2MjMyMDgzMi5tM3U4
+
+#EXTINF:-1 tvg-id="" tvg-name="Kurdsat" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",KurdSat TV
+base64:aHR0cHM6Ly9rdXJkc2F0LnR2L2xpdmUva3VyZHNhdC5tM3U4
+
+#EXTINF:-1 tvg-id="" tvg-name="shna1" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",SHNA TV
+base64:aHR0cDovL3NobmF0di5kZG5zLm5ldDoxOTM1L2xpdmUvc2huYXR2L3BsYXlsaXN0Lm0zdTg=
+
+#EXTINF:-1 tvg-id="" tvg-name="shna1" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",SHNA Quran
+base64:aHR0cDovL3Jhd3NoYW4uZGRucy5uZXQ6MTkzNS9saXZlL3Jhd3NoYW50di9wbGF5bGlzdC5tM3U4
+
+#EXTINF:-1 tvg-id="" tvg-name="waar" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",Waar TV
+base64:aHR0cDovL3dhYXIudHYvbGl2ZS93YWFyLm0zdTg=
+
+#EXTINF:-1 tvg-id="" tvg-name="channel" tvg-language="Arabic" tvg-country="unknown" group-title="Sports",BeanSport 1 
+base64:aHR0cDovL2NkbnZpbmUuY29tOjgwODAvYm4xaGQvdHJhY2tzLXYxYTEvbW9uby5tM3U4
+
+#EXTINF:-1 tvg-id="" tvg-name="channel" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",Kurdistan TV
+base64:aHR0cHM6Ly81YTNlZDdhNzJlZDRiLnN0cmVhbWxvY2submV0L2xpdmUvU01JTDpteVN0cmVhbS5zbWlsL3BsYXlsaXN0Lm0zdTg=
+
+#EXTINF:-1 tvg-id="AbuDhabiSports1.ae" tvg-logo="https://i.imgur.com/6BVWk8z.png" group-title="Sports",Abu Dhabi Sports 1
+base64:aHR0cHM6Ly92by1saXZlLW1lZGlhLmNkYi5jZG4ub3JhbmdlLmNvbS9Db250ZW50L0NoYW5uZWwvQWJ1RGhhYmlTcG9ydHNDaGFubmVsMS9ITFMvaW5kZXgubTN1OA==
+
+#EXTINF:-1 tvg-id="AlkassFive.qa" tvg-logo="https://i.imgur.com/6RGNGsM.png" group-title="Sports",Alkass Five (1080p)
+base64:aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczVubmhhL21hc3Rlci5tM3U4
+
+#EXTINF:-1 tvg-id="AlkassOne.qa" tvg-logo="https://i.imgur.com/10mmlha.png" group-title="Sports",Alkass One (1080p)
+base64:aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczFtaHUvbWFzdGVyLm0zdTg=
+
+#EXTINF:-1 tvg-id="AlkassSHOOF.qa" tvg-logo="https://shoof.alkass.net/assets/images/shoof.png" group-title="Sports",Alkass SHOOF (1080p)
+base64:aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczZTaG9vZjEvbWFzdGVyLm0zdTg=
+
+#EXTINF:-1 tvg-id="AlkassThree.qa" tvg-logo="https://i.imgur.com/d57BdFh.png" group-title="Sports",Alkass Three (1080p)
+base64:aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczN2YWsvbWFzdGVyLm0zdTg=
+
+#EXTINF:-1 tvg-id="AlkassTwo.qa" tvg-logo="https://i.imgur.com/8w61kFX.png" group-title="Sports",Alkass Two (1080p)
+base64:aHR0cHM6Ly9saXZlYWtnci5hbGthc3NkaWdpdGFsLm5ldC9obHMvbGl2ZS8yMDk3MDM3L0Fsa2FzczJoZWYvbWFzdGVyLm0zdTg=
+
+#EXTINF:-1 tvg-id="AntenaSport.ro" tvg-logo="https://yt3.googleusercontent.com/mXF6CZIe_yJNlPPQdqVvGNUbLY6V6N38hLKnWWKcOMhCDjuLTFZZ4QH_faUmo0pPXQBEIIIa=s512-c-k-c0x00ffffff-no-rj" group-title="Sports",AntenaSport (720p) [Not 24/7]
+base64:aHR0cHM6Ly9zdHJlYW0xLmFudGVuYXBsYXkucm8vYXMvYXNyb2xpdmUxL3BsYXlsaXN0Lm0zdTg=
+
+#EXTINF:-1 tvg-id="Arryadia.ma" tvg-logo="https://i.imgur.com/XjzK3gZ.png" group-title="Sports",Arryadia (480p)
+base64:aHR0cHM6Ly9jZG4ubGl2ZS5lYXN5YnJvYWRjYXN0LmlvL2Ficl9jb3JwLzczX2FycnlhZGlhX2sydGdjajAvcGxheWxpc3RfZHZyLm0zdTg=
+
