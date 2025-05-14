@@ -1,7 +1,7 @@
 # Kurdish News & Sports IPTV Channels
 
-📡 **Live Kurdish IPTV Channels** including News and Sports.  
-Created and shared by **ss900001**
+Live Kurdish IPTV Channels** including News and Sports.  
+ By ss900001
 
 ---
 
