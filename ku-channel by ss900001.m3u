@@ -35,11 +35,11 @@ http://rawshan.ddns.net:1935/live/rawshantv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="mbc" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports", mbc3
 https://mbcbollywood-prod-dub-enc.edgenextcdn.net/out/v1/d5bbe570e1514d3d9a142657d33d85e6/index_1.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="channel" tvg-language="Arabic" tvg-country="unknown" group-title="Sports",BeanSport 1 
+#EXTINF:-1 tvg-id="" tvg-name="BeanSport1" tvg-language="Arabic" tvg-country="unknown" group-title="Sports",BeanSport 1 
 http://cdnvine.com:8080/bn1hd/tracks-v1a1/mono.m3u8
 
 
-#EXTINF:-1 tvg-id="" tvg-name="channel" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",Kurdistan TV
+#EXTINF:-1 tvg-id="" tvg-name="Kurdistan TV" tvg-language="Kurdish" tvg-country="Kurdistan" group-title="Sports",Kurdistan TV
 https://5a3ed7a72ed4b.streamlock.net/live/SMIL:myStream.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AbuDhabiSports1.ae" tvg-logo="https://i.imgur.com/6BVWk8z.png" group-title="Sports",Abu Dhabi Sports 1
