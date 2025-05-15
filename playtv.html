@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Kurdish News Sports IPTV Player</title>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <style>
@@ -16,13 +16,11 @@
       padding: 40px;
       min-height: 100vh;
     }
-
     h1 {
       margin-bottom: 20px;
       font-size: 28px;
       color: #00ffd0;
     }
-
     select {
       padding: 10px 15px;
       font-size: 16px;
@@ -32,7 +30,6 @@
       background: #222;
       color: #fff;
     }
-
     video {
       width: 90%;
       max-width: 800px;
@@ -40,13 +37,11 @@
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 255, 208, 0.5);
     }
-
     .note {
       margin-top: 25px;
       font-size: 14px;
       color: #888;
     }
-
     .note a {
       color: #00ffd0;
     }
@@ -54,7 +49,6 @@
 </head>
 <body>
   <h1>Kurdish News Sports IPTV Player</h1>
-
   <select id="channelList">
     <option value="">-- Select a Channel --</option>
     <option value="https://svs.itworkscdn.net/rudawlive/rudawlive.smil/rudawpublish/rudawtv_source/chunks.m3u8">Rudaw TV</option>
@@ -77,10 +71,10 @@
     <option value="https://cdn.live.easybroadcast.io/abr_corp/73_arryadia_k2tgcj0/playlist_dvr.m3u8">Arryadia</option>
   </select>
 
-  <video id="video" controls autoplay></video>
+  <video id="video" controls></video>
 
   <div class="note">
-    Made by <strong>ss900001</strong> — <a href="https://github.com/ss900001/Kurdish-sports-IPTV-channels" target="_blank">GitHub</a>
+    Made by <strong>ss900001</strong> — Check my <a href="https://github.com/ss900001/Kurdish-sports-IPTV-channels" target="_blank">GitHub channel</a> for updates.
   </div>
 
   <script>
@@ -89,10 +83,8 @@
     let hls;
 
     channelList.addEventListener('change', function () {
-      const rawUrl = this.value;
-      if (!rawUrl) return;
-
-      const proxyUrl = 'proxy.php?url=' + encodeURIComponent(rawUrl);
+      const streamUrl = this.value;
+      if (!streamUrl) return;
 
       if (hls) {
         hls.destroy();
@@ -101,19 +93,22 @@
 
       if (Hls.isSupported()) {
         hls = new Hls();
-        hls.loadSource(proxyUrl);
+        hls.loadSource(streamUrl);
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, () => {
           video.play();
         });
+        hls.on(Hls.Events.ERROR, (event, data) => {
+          // silently ignore errors or handle accordingly
+          console.warn('HLS.js error:', data);
+        });
       } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = proxyUrl;
+        video.src = streamUrl;
         video.addEventListener('loadedmetadata', () => {
           video.play();
         });
-      } else {
-        alert('Your browser does not support HLS.');
       }
+      // no alert for unsupported browser or error to avoid notifications
     });
   </script>
 </body>
