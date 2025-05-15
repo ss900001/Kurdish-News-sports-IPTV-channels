@@ -80,8 +80,7 @@
   <video id="video" controls autoplay></video>
 
   <div class="note">
-    Made by <strong>ss900001</strong> — Visit 
-    <a href="https://github.com/ss900001/Kurdish-sports-IPTV-channels" target="_blank">GitHub</a>
+    Made by <strong>ss900001</strong> — <a href="https://github.com/ss900001/Kurdish-sports-IPTV-channels" target="_blank">GitHub</a>
   </div>
 
   <script>
@@ -90,13 +89,10 @@
     let hls;
 
     channelList.addEventListener('change', function () {
-      const originalUrl = this.value;
-      if (!originalUrl) return;
+      const rawUrl = this.value;
+      if (!rawUrl) return;
 
-      const useProxy = true;
-      const proxyUrl = useProxy
-        ? "https://cors-proxy.elfsight.com/" + encodeURIComponent(originalUrl)
-        : originalUrl;
+      const proxyUrl = 'proxy.php?url=' + encodeURIComponent(rawUrl);
 
       if (hls) {
         hls.destroy();
@@ -107,11 +103,16 @@
         hls = new Hls();
         hls.loadSource(proxyUrl);
         hls.attachMedia(video);
-        hls.on(Hls.Events.ERROR, function (event, data) {
-          console.error('HLS.js error:', data);
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+          video.play();
         });
       } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
         video.src = proxyUrl;
+        video.addEventListener('loadedmetadata', () => {
+          video.play();
+        });
+      } else {
+        alert('Your browser does not support HLS.');
       }
     });
   </script>
